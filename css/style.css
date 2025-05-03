@@ -114,13 +114,13 @@ div#calculos span#sinal{
     }
         div#calculadora{
             width:40%;
-            height: 410px;
+            height: 340px;
         }
         div#botoes div#acoes button{
         
             width: 25%;
-            height:45px;
-             font-size: 1.4rem;    
+            height:35px;
+             font-size: 1rem;    
         }
  
    }
