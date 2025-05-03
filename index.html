@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main class="container">
+        <div id="calculadora">
+
+            <div id="text">
+                <input type="text" value="0">
+                <div id="calculos">
+                    <p>
+                    </p> 
+                    <span id="sinal"></span>
+                </div>
+            </div>
+            <div id="botoes" class="container">
+                <div id="acoes">
+                    <button class="operacoes" onclick="operacao('MoM')">+/-</button>
+                    <button class="operacoes" onclick="operacao('CE')">CE</button>
+                    <button class="operacoes" onclick="operacao('C')">C</button>
+                    <button class="operacoes" onclick="operacao('del')">del</button>
+               
+                    <button class="num" onclick="interNummber(1)">1</button>
+                    <button class="num" onclick="interNummber(2)">2</button>
+                    <button class="num" onclick="interNummber(3)">3</button>
+                    <button class="operacoes" onclick="operacao('div')">/</button>
+                    <button class="num" onclick="interNummber(4)">4</button>
+                    <button class="num" onclick="interNummber(5)">5</button>
+                    <button class="num" onclick="interNummber(6)">6</button>
+                    <button class="operacoes" onclick="operacao('mult')">*</button>
+                    <button class="num" onclick="interNummber(7)">7</button>
+                    <button class="num" onclick="interNummber(8)">8</button>
+                    <button class="num" onclick="interNummber(9)">9</button>
+                    <button class="operacoes" onclick="operacao('sub')">-</button>
+                    <button class="num" onclick="interNummber('.')">.</button>
+                    <button class="num" onclick="interNummber(0)"> 0</button>
+                    <button class="operacoes"  onclick="igual()">=</button>
+                    <button class="operacoes" onclick="operacao('soma')">+</button>
+
+                </div>
+               
+            </div>
+
+        </div>
+    </main>
+    
+</body>
+<script src="typescript/script.js"></script>
+</html>

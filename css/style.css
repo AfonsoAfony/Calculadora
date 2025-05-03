@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+   
+    --sinza: #414040;
+    --cor-white: #FEFBF4;
+    --cor-btn: #FFBD48;
+    --dark:#0B0A0A;
+    --cor-border:#fff;
+}
+
+body{
+    background-color:var(--sinza);
+    width:100%;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    margin:5px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+div#calculadora{
+    width:40%;
+    height: 720px;
+    border: 4px solid var(--cor-border);
+    border-radius: 8px;
+}
+div#text{
+    width: 100%;
+    padding:24px;
+}
+div#text input{
+    width: 100%;
+    height: 50px;
+    padding:14px;
+    border-radius: 10px;
+    font-size: 2rem;
+    align-content: center;
+    text-align: right;
+}
+
+div#botoes{
+    width: 100%;
+    flex-direction: row;
+    padding:14px;
+
+
+}
+div#botoes div#acoes{
+    border: 2px solid ;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding: 2% 7% 2% 7%;
+
+}
+div#botoes div#acoes button{
+
+    width: 25%;
+    height:105px;
+    cursor: pointer;
+    font-size: 5rem;
+    border-radius: 10px;
+    
+}
+div#botoes div#acoes .num:hover{
+    background-color: var(--cor-btn);
+    
+}
+
+.operacoes{
+    background-color: var(--cor-btn);
+    color:var(--sinza);
+}
+.operacoes:hover{
+    color: var(--cor-white);
+    background-color: var(--sinza);
+}
+div#calculos{
+    display: flex;
+    flex-direction: row;
+    color: var(--cor-white);
+    height:23px;
+    margin-top: 8px;
+    padding:2px 2px 2px 2px;
+    background-color: #1a1919;
+}
+div#calculos span#sinal{
+    margin-left: 8px;
+}
+
+
+/*RESPONSIVIDADE:*/
+@media(min-width:200px) and (max-width:575.9px){ 
+    
+    body{
+        margin-top: 22%;
+       }
+       div#text input{
+        height: 1px;
+        font-size: 100%;
+    }
+        div#calculadora{
+            width:40%;
+            height: 410px;
+        }
+        div#botoes div#acoes button{
+        
+            width: 25%;
+            height:45px;
+             font-size: 1.4rem;    
+        }
+ 
+   }
+   @media(min-width:576px) and (max-width:767.9px){
+    body{
+        margin-top: 12%;
+       }
+       
+       
+       div#text input{
+        height: 6px;
+        font-size: 100%;
+    }
+        div#calculadora{
+            width:40%;
+            height: 470px;
+            
+        }
+        div#botoes div#acoes button{
+        
+            width: 25%;
+            height:60px;
+             font-size: 1.9rem;
+            
+        }
+
+   }
+   @media(min-width:768px) and (max-width:991.9px){
+   body{
+    margin-top: 12%;
+   }
+   div#text input{
+    height: 16px;
+    font-size: 100%;
+}
+
+    div#calculadora{
+        width:40%;
+        height: 570px;
+
+    }
+    div#botoes div#acoes button{
+    
+        width: 25%;
+        height:80px;
+         font-size: 2.7rem;
+        
+    }
+}
+   @media(min-width:992px) and (max-width:1400.9px){
+    
+    div#calculadora{
+        width:40%;
+        height: 640px;
+    }
+    div#botoes div#acoes button{
+        width: 25%;
+        height:90px;
+        font-size: 3rem;
+    }
+ 
+   }
+ 
